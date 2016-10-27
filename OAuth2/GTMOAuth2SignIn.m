@@ -95,17 +95,17 @@ finishedWithFetcher:(GTMHTTPFetcher *)fetcher
 
 #if !GTM_OAUTH2_SKIP_GOOGLE_SUPPORT
 + (NSURL *)googleAuthorizationURL {
-  NSString *str = @"https://myaccounts.google.com/o/oauth2/auth";
+  NSString *str = @"https://myaccount.google.com/o/oauth2/auth";
   return [NSURL URLWithString:str];
 }
 
 + (NSURL *)googleTokenURL {
-  NSString *str = @"https://myaccounts.google.com/o/oauth2/token";
+  NSString *str = @"https://myaccount.google.com/o/oauth2/token";
   return [NSURL URLWithString:str];
 }
 
 + (NSURL *)googleRevocationURL {
-  NSString *urlStr = @"https://myaccounts.google.com/o/oauth2/revoke";
+  NSString *urlStr = @"https://myaccount.google.com/o/oauth2/revoke";
   return [NSURL URLWithString:urlStr];
 }
 
